@@ -72,7 +72,7 @@ GLOSARIO = [
     ("LLM Twin", "Sistema que reproduce el estilo y el criterio de una persona usando sus propios datos.", "llm1l1"),
     ("LLM-as-judge", "Uso de un modelo fuerte para puntuar respuestas según una rúbrica explícita.", "llm6l1"),
     ("LoRA", "Ajuste eficiente que congela el modelo base y entrena adaptadores de bajo rango.", "llm5l2"),
-    ("MM-RAG", "RAG multi-modelo: indexa con varios modelos de embeddings y combina sus recuperaciones.", "llm4l3"),
+    ("Reindexación", "Proceso de reconstruir un índice cuando cambian los datos, el chunking o el modelo de embeddings.", "llm4l3"),
     ("MongoDB", "Base de documentos JSON que aquí guarda el corpus crudo y el limpio.", "llm2l3"),
     ("MVP", "Producto mínimo viable: la versión más pequeña que entrega valor y permite aprender.", "llm1l1"),
     ("Observabilidad", "Capacidad de reconstruir qué pasó en el sistema a partir de trazas, logs y métricas.", "llm7l3"),

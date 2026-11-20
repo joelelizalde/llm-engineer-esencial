@@ -146,7 +146,7 @@ MODULE = {
                 "El ajuste fino aporta estilo y formato; la recuperación aporta hechos y actualidad.",
                 "El sistema se completa con despliegue, observabilidad y un ciclo de mejora continua.",
             ],
-            "example": "Cuando un usuario pregunta «¿qué opinas del RAG multi-modelo?», la inferencia recupera dos artículos donde la autora lo trata, filtra por fecha para no citar una versión obsoleta, construye un prompt que exige referencias y devuelve una respuesta con enlaces. La traza permite comprobar que el documento correcto estaba entre los recuperados.",
+            "example": "Cuando un usuario pregunta «¿qué opinas del chunking por secciones?», la inferencia recupera dos artículos donde la autora lo trata, filtra por fecha para no citar una versión obsoleta, construye un prompt que exige referencias y devuelve una respuesta con enlaces. La traza permite comprobar que el documento correcto estaba entre los recuperados.",
             "caution": "Un diagrama bonito no garantiza un sistema fiable. Si no se versionan el índice, el prompt y el modelo a la vez, reproducir una respuesta será imposible.",
             "search": "arquitectura LLM Twin recolección limpieza MongoDB chunking Qdrant embeddings SFT DPO evaluación inferencia RAG despliegue SageMaker monitoreo LLMOps",
         },

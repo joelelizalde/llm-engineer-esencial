@@ -127,28 +127,28 @@ MODULE = {
                     ],
                 },
                 {
-                    "h": "MM-RAG y recuperación multi-modelo",
+                    "h": "Indexar código, tablas y documentos largos",
                     "p": [
-                        "MM-RAG, o RAG multi-modelo, indexa el mismo corpus con varios modelos de embeddings y combina sus recuperaciones. La intuición es que modelos distintos capturan aspectos distintos: uno puede ser mejor en sinónimos, otro en términos técnicos. Al fusionar rankings, se reduce la probabilidad de que un documento relevante quede fuera.",
-                        "La fusión puede ser por suma de puntuaciones normalizadas, por reciprocal rank fusion o por un reranker común. El coste se multiplica: más almacenamiento, más cálculo y más latencia. Solo tiene sentido si un solo modelo muestra un techo claro y tienes evaluación para demostrar la mejora.",
-                        "Una alternativa más barata es la búsqueda híbrida con un componente léxico. Otra es el reranking sobre un único modelo. Empieza simple y añade modelos cuando las métricas digan que el recall es el cuello de botella, no cuando el artículo de moda lo sugiera.",
+                        "El código no se comporta como la prosa. Conviene cortar por funciones, clases o bloques completos, conservar el nombre del archivo y el lenguaje en el payload, y no separar una firma de su cuerpo. Un chunk que empieza a mitad de una función pierde las variables y el contexto que explican qué hace. Para repositorios grandes, indexa también el README y los ejemplos de uso: suelen responder mejor las preguntas de «cómo se usa».",
+                        "Las tablas y los documentos largos necesitan otra estrategia. Una tabla partida en filas sueltas pierde la cabecera y el significado de cada columna; es mejor conservar la tabla completa o convertirla en una representación con encabezados repetidos. En informes extensos, la recuperación padre-hijo funciona bien: se buscan fragmentos pequeños, pero se entrega al modelo la sección que los contiene.",
+                        "La evaluación debe separar tipos de documento. Un tamaño de chunk que mejora los artículos puede empeorar el código o las tablas. Mide recall y calidad de respuesta por categoría antes de fijar una configuración global; si las diferencias son grandes, usa estrategias distintas por colección o por campo de payload.",
                     ],
                 },
             ],
             "brief": [
                 "Diseña dimensión, distancia y payload antes de indexar",
                 "Indexa de forma incremental e idempotente",
-                "MM-RAG multiplica coste: úsalo con evidencia",
+                "Adapta el chunking al tipo de documento, no al revés",
             ],
             "keys": [
                 "El id del punto debe derivarse del documento y del chunk para permitir actualizaciones limpias.",
                 "El payload convierte la búsqueda en algo filtrable, citable y auditable.",
                 "Una colección nueva con alias permite evaluar y volver atrás sin reindexar dos veces.",
-                "MM-RAG combina varios modelos de embeddings a cambio de más coste y latencia.",
+                "Código, tablas y documentos largos piden estrategias de corte distintas.",
             ],
             "example": "Un equipo reindexa con un modelo multilingüe nuevo. Crea la colección articulos_v2, indexa en paralelo, evalúa con las mismas cien preguntas y comprueba que el recall@5 sube de 0,71 a 0,84. Solo entonces cambia el alias de lectura. Si hubiera empeorado, habría vuelto al índice anterior en un minuto.",
             "caution": "Borrar y recrear la colección en producción sin alias ni copia de seguridad deja el servicio sin recuperación durante toda la indexación.",
-            "search": "Qdrant colección dimensión distancia payload índices HNSW búsqueda exacta incremental versionado alias MM-RAG multi-modelo reciprocal rank fusion",
+            "search": "Qdrant colección dimensión distancia payload índices HNSW búsqueda exacta incremental versionado alias código tablas documentos largos recuperación padre-hijo",
         },
     ],
     "quiz": {
@@ -200,6 +200,6 @@ MODULE = {
             "Escribe el payload mínimo de un chunk para citar la fuente y filtrar por autor y fecha.",
             "Prepara diez preguntas de evaluación, incluyendo dos cuya respuesta no esté en el corpus, y define qué esperarías del sistema.",
         ],
-        "search": "evaluación cierre RAG chunking embeddings Qdrant payload recall@k indexación incremental alias MM-RAG",
+        "search": "evaluación cierre RAG chunking embeddings Qdrant payload recall@k indexación incremental alias tipos de documento",
     },
 }
