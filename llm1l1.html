@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qué es un LLM Twin y qué problema resuelve · Ingeniería de LLM</title>
+<meta name="description" content="Un LLM Twin no es un chatbot que sabe de todo, sino un sistema que escribe y razona como una persona concreta porque se alimenta de su contenido. La…">
+<meta name="theme-color" content="#f5f1e8">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/curso.css">
+<script>(function(){try{var t=localStorage.getItem('llmeng_esencial_theme');if(!t){t=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+</head>
+<body class="is-lesson">
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<aside class="sidebar" id="sidebar" aria-label="Temario del curso">
+<a class="brand" href="index.html">
+  <span class="brand-mark">LE</span>
+  <span class="brand-text"><strong>Ingeniería de LLM</strong><span>Edición esencial</span></span>
+</a>
+<div class="side-progress"><div class="side-progress-top"><svg class="ring" viewBox="0 0 46 46" aria-hidden="true"><circle class="ring-bg" cx="23" cy="23" r="18"></circle><circle class="ring-fg" data-ring cx="23" cy="23" r="18"></circle></svg><div class="side-progress-text"><strong><span data-done-count>0</span> de 28 lecciones</strong><span>Tu avance</span></div></div></div>
+<nav class="side-nav"><div class="nav-label">Temario · 7 módulos</div>
+<details class="mod" data-module="01" open data-current="true">
+<summary>
+  <span class="mod-num">01</span>
+  <span class="mod-name">El gemelo digital</span>
+  <span class="mod-count" data-modcount="01">0/4</span>
+  <span class="mod-bar" aria-hidden="true"><i data-modbar="01"></i></span>
+</summary>
+<ol class="lessons">
+<li><a class="lesson-link is-current" data-lesson="llm1l1" href="llm1l1.html" aria-current="page"><span class="ln">01.1</span><span class="lt">Qué es un LLM Twin y qué problema resuelve</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link" data-lesson="llm1l2" href="llm1l2.html"><span class="ln">01.2</span><span class="lt">Los tres pipelines: feature, training e inference</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link" data-lesson="llm1l3" href="llm1l3.html"><span class="ln">01.3</span><span class="lt">La arquitectura del LLM Twin de principio a fin</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link quiz" data-lesson="llm1q" href="llm1q.html"><span class="ln">01.4</span><span class="lt">Cierre del módulo 01</span><span class="dot" aria-hidden="true"></span></a></li>
+</ol></details>
+<details class="mod" data-module="02">
+<summary>
+  <span class="mod-num">02</span>
+  <span class="mod-name">Herramientas y entorno</span>
+  <span class="mod-count" data-modcount="02">0/4</span>
+  <span class="mod-bar" aria-hidden="true"><i data-modbar="02"></i></span>
+</summary>
+<ol class="lessons">
+<li><a class="lesson-link" data-lesson="llm2l1" href="llm2l1.html"><span class="ln">02.1</span><span class="lt">Un proyecto reproducible con Poetry y Poe</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link" data-lesson="llm2l2" href="llm2l2.html"><span class="ln">02.2</span><span class="lt">Orquestación y experimentos: ZenML, Comet y Opik</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link" data-lesson="llm2l3" href="llm2l3.html"><span class="ln">02.3</span><span class="lt">Datos y AWS: MongoDB, Qdrant y SageMaker</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link quiz" data-lesson="llm2q" href="llm2q.html"><span class="ln">02.4</span><span class="lt">Cierre del módulo 02</span><span class="dot" aria-hidden="true"></span></a></li>
+</ol></details>
+<details class="mod" data-module="03">
+<summary>
+  <span class="mod-num">03</span>
+  <span class="mod-name">Ingeniería de datos</span>
+  <span class="mod-count" data-modcount="03">0/4</span>
+  <span class="mod-bar" aria-hidden="true"><i data-modbar="03"></i></span>
+</summary>
+<ol class="lessons">
+<li><a class="lesson-link" data-lesson="llm3l1" href="llm3l1.html"><span class="ln">03.1</span><span class="lt">Diseñar la recolección: crawlers, APIs y límites</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link" data-lesson="llm3l2" href="llm3l2.html"><span class="ln">03.2</span><span class="lt">De HTML a documento limpio</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link" data-lesson="llm3l3" href="llm3l3.html"><span class="ln">03.3</span><span class="lt">El data warehouse y la capa cruda</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link quiz" data-lesson="llm3q" href="llm3q.html"><span class="ln">03.4</span><span class="lt">Cierre del módulo 03</span><span class="dot" aria-hidden="true"></span></a></li>
+</ol></details>
+<details class="mod" data-module="04">
+<summary>
+  <span class="mod-num">04</span>
+  <span class="mod-name">Pipeline de features RAG</span>
+  <span class="mod-count" data-modcount="04">0/4</span>
+  <span class="mod-bar" aria-hidden="true"><i data-modbar="04"></i></span>
+</summary>
+<ol class="lessons">
+<li><a class="lesson-link" data-lesson="llm4l1" href="llm4l1.html"><span class="ln">04.1</span><span class="lt">RAG sin mitos: qué resuelve y qué no</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link" data-lesson="llm4l2" href="llm4l2.html"><span class="ln">04.2</span><span class="lt">Chunking y embeddings con criterio</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link" data-lesson="llm4l3" href="llm4l3.html"><span class="ln">04.3</span><span class="lt">Qdrant, metadatos e indexación incremental</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link quiz" data-lesson="llm4q" href="llm4q.html"><span class="ln">04.4</span><span class="lt">Cierre del módulo 04</span><span class="dot" aria-hidden="true"></span></a></li>
+</ol></details>
+<details class="mod" data-module="05">
+<summary>
+  <span class="mod-num">05</span>
+  <span class="mod-name">Ajuste fino supervisado</span>
+  <span class="mod-count" data-modcount="05">0/4</span>
+  <span class="mod-bar" aria-hidden="true"><i data-modbar="05"></i></span>
+</summary>
+<ol class="lessons">
+<li><a class="lesson-link" data-lesson="llm5l1" href="llm5l1.html"><span class="ln">05.1</span><span class="lt">Construir un dataset de instrucciones</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link" data-lesson="llm5l2" href="llm5l2.html"><span class="ln">05.2</span><span class="lt">SFT en la práctica: LoRA, QLoRA y paciencia</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link" data-lesson="llm5l3" href="llm5l3.html"><span class="ln">05.3</span><span class="lt">Alineación con preferencias: DPO y alternativas</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link quiz" data-lesson="llm5q" href="llm5q.html"><span class="ln">05.4</span><span class="lt">Cierre del módulo 05</span><span class="dot" aria-hidden="true"></span></a></li>
+</ol></details>
+<details class="mod" data-module="06">
+<summary>
+  <span class="mod-num">06</span>
+  <span class="mod-name">Evaluación y optimización</span>
+  <span class="mod-count" data-modcount="06">0/4</span>
+  <span class="mod-bar" aria-hidden="true"><i data-modbar="06"></i></span>
+</summary>
+<ol class="lessons">
+<li><a class="lesson-link" data-lesson="llm6l1" href="llm6l1.html"><span class="ln">06.1</span><span class="lt">Evaluar un LLM y un sistema RAG</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link" data-lesson="llm6l2" href="llm6l2.html"><span class="ln">06.2</span><span class="lt">Optimizar la inferencia sin romper la calidad</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link" data-lesson="llm6l3" href="llm6l3.html"><span class="ln">06.3</span><span class="lt">Elegir modelo y hardware: coste, latencia y calidad</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link quiz" data-lesson="llm6q" href="llm6q.html"><span class="ln">06.4</span><span class="lt">Cierre del módulo 06</span><span class="dot" aria-hidden="true"></span></a></li>
+</ol></details>
+<details class="mod" data-module="07">
+<summary>
+  <span class="mod-num">07</span>
+  <span class="mod-name">RAG en producción</span>
+  <span class="mod-count" data-modcount="07">0/4</span>
+  <span class="mod-bar" aria-hidden="true"><i data-modbar="07"></i></span>
+</summary>
+<ol class="lessons">
+<li><a class="lesson-link" data-lesson="llm7l1" href="llm7l1.html"><span class="ln">07.1</span><span class="lt">El pipeline de inferencia RAG</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link" data-lesson="llm7l2" href="llm7l2.html"><span class="ln">07.2</span><span class="lt">Desplegar el pipeline: API, Docker y CI/CD</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link" data-lesson="llm7l3" href="llm7l3.html"><span class="ln">07.3</span><span class="lt">LLMOps: observar, evaluar y mejorar</span><span class="dot" aria-hidden="true"></span></a></li>
+<li><a class="lesson-link quiz" data-lesson="llm7q" href="llm7q.html"><span class="ln">07.4</span><span class="lt">Cierre del módulo 07</span><span class="dot" aria-hidden="true"></span></a></li>
+</ol></details>
+</nav>
+<div class="side-foot"><a href="glosario.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5Z"></path><path d="M4 5.5v16"></path></svg> Glosario</a><a href="progreso.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"></path></svg> Mi progreso</a><a href="Ingenieria-de-LLM-Esencial.pdf"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"></path></svg> Manual en PDF</a><div class="edition">LE · 2026</div></div>
+</aside><main class="main" id="contenido">
+<header class="topbar">
+  <button class="icon-btn menu-btn" type="button" data-menu-toggle aria-label="Abrir el temario" aria-controls="sidebar" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
+  <nav class="crumbs" aria-label="Migas de pan"><a href="index.html">Curso</a><span class="sep">/</span><span>Módulo 01</span><span class="sep">/</span><strong>Qué es un LLM Twin y qué problema resuelve</strong></nav>
+  <div class="top-actions">
+    <button class="search-btn" type="button" data-search-open aria-label="Buscar en el curso"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="m16.5 16.5 4 4"></path></svg><span>Buscar</span><kbd>⌘K</kbd></button>
+    <button class="icon-btn" type="button" data-theme-toggle aria-label="Cambiar tema"><svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5Z"></path></svg><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg></button>
+  </div>
+  <div class="readbar" data-readbar></div>
+</header>
+<div class="lesson-wrap">
+  <article class="lesson">
+    <header>
+  <div class="kicker">Módulo 01 · Lección 1 de 3</div>
+  <h1>Qué es un LLM Twin y qué problema resuelve</h1>
+  <div class="lesson-meta"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 1.8"></path></svg> 6 min de lectura</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5Z"></path><path d="M4 5.5v16M8 7h8M8 11h6"></path></svg> 741 palabras</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><rect x="4" y="4" width="6" height="6" rx="1"></rect><rect x="14" y="4" width="6" height="6" rx="1"></rect><rect x="4" y="14" width="6" height="6" rx="1"></rect><rect x="14" y="14" width="6" height="6" rx="1"></rect></svg> 3 apartados</span></div>
+</header>
+    <div class="brief">
+  <div class="brief-k">En esta lección</div>
+  <div><ul><li>El gemelo imita estilo y criterio, no omnisciencia</li><li>El corpus y la recuperación aportan lo que el modelo no sabe</li><li>El MVP fija alcance, datos, latencia y evaluación</li></ul><p>Lee de principio a fin; al terminar, el botón inferior te lleva directo a la siguiente lección.</p></div>
+</div>
+<div class="prose">
+<p class="lead">Un LLM Twin no es un chatbot que sabe de todo, sino un sistema que escribe y razona como una persona concreta porque se alimenta de su contenido. La diferencia entre esa promesa y un asistente genérico está menos en el modelo que en los datos, la recuperación y el producto que lo rodea.</p>
+<figure class="diagram"><svg viewBox="0 0 840 160" role="img" aria-label="Diagrama de flujo: Tu contenido a Recuperación a Modelo ajustado a Tu voz"><rect x="26.0" y="34" width="177.5" height="88" rx="10" fill="#FFFDF7" stroke="#C8BBA3" stroke-width="1.4"/><text x="114.8" y="83.0" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600" fill="#18140F" text-anchor="middle">Tu contenido</text><line x1="208.5" y1="78.0" x2="224.5" y2="78.0" stroke="#C8BBA3" stroke-width="2"/><polygon points="224.5,78.0 217.5,73.5 217.5,82.5" fill="#C8BBA3"/><rect x="229.5" y="34" width="177.5" height="88" rx="10" fill="#FFFDF7" stroke="#C8BBA3" stroke-width="1.4"/><text x="318.2" y="83.0" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600" fill="#18140F" text-anchor="middle">Recuperación</text><line x1="412.0" y1="78.0" x2="428.0" y2="78.0" stroke="#C8BBA3" stroke-width="2"/><polygon points="428.0,78.0 421.0,73.5 421.0,82.5" fill="#C8BBA3"/><rect x="433.0" y="34" width="177.5" height="88" rx="10" fill="#FFFDF7" stroke="#C8BBA3" stroke-width="1.4"/><text x="521.8" y="83.0" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600" fill="#18140F" text-anchor="middle">Modelo ajustado</text><line x1="615.5" y1="78.0" x2="631.5" y2="78.0" stroke="#C8BBA3" stroke-width="2"/><polygon points="631.5,78.0 624.5,73.5 624.5,82.5" fill="#C8BBA3"/><rect x="636.5" y="34" width="177.5" height="88" rx="10" fill="#FFFDF7" stroke="#C9481B" stroke-width="2"/><text x="725.2" y="83.0" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600" fill="#18140F" text-anchor="middle">Tu voz</text></svg><figcaption>El gemelo se construye de izquierda a derecha: primero el corpus, después el índice, luego el ajuste y por último el sistema que responde.</figcaption></figure>
+<h2 id="un-gemelo-no-un-asistente-generico">Un gemelo, no un asistente genérico</h2>
+<p>Un LLM Twin es una aplicación que imita la forma de escribir, los temas y el criterio de una persona. Para lograrlo se recopila su obra pública —artículos, notas, código, entrevistas—, se limpia y se indexa, se ajusta un modelo con ese material y se construye una interfaz que recupera fragmentos relevantes antes de responder. El modelo aporta lenguaje; el corpus aporta identidad.</p>
+<p>La palabra «gemelo» invita a una expectativa equivocada: que el sistema será una copia exacta de la persona. No lo será. Un gemelo útil reproduce el estilo y la postura ante problemas conocidos, y falla cuando se le pide opinar sobre algo que esa persona nunca escribió. Reconocer ese límite es el primer paso para diseñar un producto honesto.</p>
+<p>La utilidad aparece en tareas concretas: redactar un primer borrador con tu tono, responder preguntas sobre tu obra, generar documentación técnica con tus convenciones o preparar material de formación a partir de tus cursos. En todas ellas el valor está en reducir el tiempo hasta un borrador aceptable, no en sustituir el juicio final.</p>
+<h2 id="por-que-no-basta-con-chatgpt">Por qué no basta con ChatGPT</h2>
+<p>Un modelo general conoce mucho del mundo, pero no conoce tu archivo privado ni distingue cuál de tus artículos es reciente. Si le pides que escriba «como tú», improvisará un estilo plausible a partir de la descripción que le des. Un gemelo, en cambio, ha visto tus textos y puede citarlos; la diferencia se nota en los detalles: giros, ejemplos recurrentes, temas que evitas.</p>
+<p>También hay razones de control. Un sistema propio permite decidir qué documentos entran, cómo se versionan, qué se registra y qué no sale del perímetro. Para una empresa, eso puede ser más importante que unos puntos de calidad en un benchmark. La pregunta correcta no es si el modelo general es mejor, sino si el sistema resuelve el problema con las restricciones reales.</p>
+<p>Y hay una razón económica: un modelo pequeño ajustado con tus datos y apoyado en recuperación puede ser suficiente para tu dominio, con latencia y coste menores que enviar contextos enormes a un modelo de frontera en cada petición. Esa combinación —modelo especializado más recuperación— es el corazón del curso.</p>
+<h2 id="definir-el-mvp-antes-de-escribir-codigo">Definir el MVP antes de escribir código</h2>
+<p>El libro propone empezar por un producto mínimo viable: la versión más pequeña que entrega valor y permite aprender. Para el gemelo, el MVP puede ser un asistente que responde preguntas sobre un conjunto cerrado de artículos y devuelve siempre la fuente. No incluye agentes autónomos, ni múltiples usuarios, ni una interfaz perfecta. Incluye un corpus, un índice, un modelo y una forma de evaluar.</p>
+<p>Ese recorte tiene consecuencias técnicas. Si el MVP solo responde sobre artículos, el esquema de documentos puede ser sencillo y la recuperación se limita a una colección. Si además debe escribir con tu estilo, hace falta ajuste fino. Si debe citar, el índice necesita metadatos y el prompt debe exigir referencias verificables. Cada requisito del producto se traduce en una pieza del sistema.</p>
+<p>El error más caro es construir primero la infraestructura y definir el producto al final. Un pipeline elegante para un caso que nadie usa es deuda técnica disfrazada de ingeniería. Escribe en una página qué pregunta responde el sistema, con qué datos, con qué latencia y cómo sabrás que funciona. Esa página guiará todas las decisiones siguientes.</p>
+<aside class="lesson-extra keypoints"><h2 id="ideas-clave">Ideas clave</h2><ul><li>Un LLM Twin combina un modelo ajustado con un corpus propio indexado y recuperable.</li><li>El valor está en acelerar borradores y respuestas sobre un dominio concreto, no en clonar a una persona.</li><li>El control sobre datos, permisos y registro puede pesar más que la calidad bruta del modelo.</li><li>Definir el MVP antes de programar evita construir infraestructura para un caso que nadie necesita.</li></ul></aside>
+<aside class="lesson-extra example"><h2 id="caso">Caso concreto</h2><p>Una consultora independiente quiere un asistente que redacte propuestas con su tono. El MVP ingiere sus 40 propuestas anteriores, las indexa por servicio y sector, recupera las tres más parecidas y pide al modelo un borrador que cite esos documentos. No necesita ajuste fino para la primera versión: necesita recuperación y una plantilla de prompt bien diseñada.</p></aside>
+<aside class="lesson-extra caution"><h2 id="cuidado">Cuidado</h2><p>Prometer un «clon digital» que responde cualquier pregunta lleva a decepción y a riesgos legales. Delimita el alcance, muestra las fuentes y deja claro cuándo el sistema no sabe.</p></aside>
+</div>
+    <section class="finish">
+  <div class="eyebrow">Siguiente lección</div>
+  <h2>Los tres pipelines: feature, training e inference</h2>
+  <p>Continúa la lectura sin volver al índice. También puedes usar la flecha → del teclado.</p>
+  <div class="finish-actions">
+    <a class="btn btn-cream" href="llm1l2.html" data-complete-link="llm1l1">Completar y seguir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+    <a class="quiet" href="llm1l2.html">Saltar sin completar</a>
+  </div>
+  
+</section>
+  </article>
+<aside class="toc" aria-label="En esta página"><div class="toc-label">En esta página</div><a href="#un-gemelo-no-un-asistente-generico">Un gemelo, no un asistente genérico</a><a href="#por-que-no-basta-con-chatgpt">Por qué no basta con ChatGPT</a><a href="#definir-el-mvp-antes-de-escribir-codigo">Definir el MVP antes de escribir código</a><a href="#ideas-clave">Ideas clave</a><a href="#caso">Caso concreto</a><a href="#cuidado">Cuidado</a></aside>
+</div>
+</main>
+<nav class="dock" aria-label="Navegación entre lecciones">
+  <span class="dock-btn" aria-disabled="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"></path></svg></span>
+  <div class="dock-mid"><span>Lección 1 / 28</span><i><b data-dockbar></b></i></div>
+  <a class="dock-next" href="llm1l2.html" title="Siguiente (→)">Siguiente <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</nav>
+<div class="overlay" data-overlay></div>
+<div class="searchbox" data-search role="dialog" aria-modal="true" aria-label="Buscar en el curso">
+  <div class="search-panel">
+    <div class="search-top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="m16.5 16.5 4 4"></path></svg><input class="search-input" type="search" placeholder="Busca una lección o un tema…" aria-label="Buscar una lección o un tema" autocomplete="off"><button class="search-close" type="button" data-search-close>ESC</button></div>
+    <div class="search-results"></div>
+    <div class="sr-hint"><span>↑ ↓ para navegar · Enter para abrir</span><span>Esc para cerrar</span></div>
+  </div>
+</div>
+<div class="toast" data-toast role="status" aria-live="polite"></div>
+<script>window.LLM={"total":28,"current":"llm1l1","next":{"title":"Los tres pipelines: feature, training e inference","href":"llm1l2.html"},"prev":null,"modules":[{"num":"01","title":"El gemelo digital","lessons":[{"id":"llm1l1","num":1,"lnum":1,"title":"Qué es un LLM Twin y qué problema resuelve","href":"llm1l1.html","kind":"lesson","search":"LLM Twin gemelo digital corpus recuperación estilo criterio MVP producto mínimo viable ChatGPT control datos privados coste latencia"},{"id":"llm1l2","num":2,"lnum":2,"title":"Los tres pipelines: feature, training e inference","href":"llm1l2.html","kind":"lesson","search":"FTI feature pipeline training pipeline inference pipeline desajuste entrenamiento servicio reproducibilidad artefactos linaje escalar depurar"},{"id":"llm1l3","num":3,"lnum":3,"title":"La arquitectura del LLM Twin de principio a fin","href":"llm1l3.html","kind":"lesson","search":"arquitectura LLM Twin recolección limpieza MongoDB chunking Qdrant embeddings SFT DPO evaluación inferencia RAG despliegue SageMaker monitoreo LLMOps"},{"id":"llm1q","num":4,"lnum":4,"title":"Cierre del módulo 01","href":"llm1q.html","kind":"quiz","search":"evaluación cierre LLM Twin FTI MVP corpus recuperación índice entrenamiento inferencia reproducibilidad arquitectura"}]},{"num":"02","title":"Herramientas y entorno","lessons":[{"id":"llm2l1","num":1,"lnum":1,"title":"Un proyecto reproducible con Poetry y Poe","href":"llm2l1.html","kind":"lesson","search":"Poetry pyproject lock dependencias grupos Poe tareas pre-commit Ruff mypy pytest configuración secretos .env IAM reproducibilidad"},{"id":"llm2l2","num":2,"lnum":2,"title":"Orquestación y experimentos: ZenML, Comet y Opik","href":"llm2l2.html","kind":"lesson","search":"ZenML steps pipelines artefactos stack orquestador caché Comet experimentos métricas Opik trazas evaluación prompts LLMOps"},{"id":"llm2l3","num":3,"lnum":3,"title":"Datos y AWS: MongoDB, Qdrant y SageMaker","href":"llm2l3.html","kind":"lesson","search":"MongoDB documentos esquema validación índices Qdrant colecciones vectores payload filtros HNSW coseno AWS S3 ECR SageMaker IAM presupuesto"},{"id":"llm2q","num":4,"lnum":4,"title":"Cierre del módulo 02","href":"llm2q.html","kind":"quiz","search":"evaluación cierre Poetry Poe ZenML Comet Opik MongoDB Qdrant SageMaker IAM dependencias secretos artefactos"}]},{"num":"03","title":"Ingeniería de datos","lessons":[{"id":"llm3l1","num":1,"lnum":1,"title":"Diseñar la recolección: crawlers, APIs y límites","href":"llm3l1.html","kind":"lesson","search":"crawler recolección fuentes Medium Substack GitHub LinkedIn RSS API robots.txt rate limit reintentos espera exponencial idempotencia checkpoint ingesta"},{"id":"llm3l2","num":2,"lnum":2,"title":"De HTML a documento limpio","href":"llm3l2.html","kind":"lesson","search":"HTML extracción legibilidad boilerplate Markdown normalización deduplicación MinHash hash idioma validación esquema privacidad trazabilidad licencia"},{"id":"llm3l3","num":3,"lnum":3,"title":"El data warehouse y la capa cruda","href":"llm3l3.html","kind":"lesson","search":"data lake data warehouse MongoDB S3 capas crudo limpio ETL ELT CDC change streams borrado linaje particiones reproducir corpus"},{"id":"llm3q","num":4,"lnum":4,"title":"Cierre del módulo 03","href":"llm3q.html","kind":"quiz","search":"evaluación cierre recolección crawler limpieza deduplicación capas data lake warehouse linaje borrado reproducibilidad"}]},{"num":"04","title":"Pipeline de features RAG","lessons":[{"id":"llm4l1","num":1,"lnum":1,"title":"RAG sin mitos: qué resuelve y qué no","href":"llm4l1.html","kind":"lesson","search":"RAG recuperación generación aumentada conocimiento privado citas reescritura consulta búsqueda híbrida reranking cross-encoder evaluación recuperación"},{"id":"llm4l2","num":2,"lnum":2,"title":"Chunking y embeddings con criterio","href":"llm4l2.html","kind":"lesson","search":"chunking fijo semántico estructura solapamiento tamaño tokens embeddings dimensión multilingüe normalización coseno recall@k MRR nDCG evaluación"},{"id":"llm4l3","num":3,"lnum":3,"title":"Qdrant, metadatos e indexación incremental","href":"llm4l3.html","kind":"lesson","search":"Qdrant colección dimensión distancia payload índices HNSW búsqueda exacta incremental versionado alias MM-RAG multi-modelo reciprocal rank fusion"},{"id":"llm4q","num":4,"lnum":4,"title":"Cierre del módulo 04","href":"llm4q.html","kind":"quiz","search":"evaluación cierre RAG chunking embeddings Qdrant payload recall@k indexación incremental alias MM-RAG"}]},{"num":"05","title":"Ajuste fino supervisado","lessons":[{"id":"llm5l1","num":1,"lnum":1,"title":"Construir un dataset de instrucciones","href":"llm5l1.html","kind":"lesson","search":"dataset instrucciones par instrucción entrada respuesta generación sintética filtros diversidad plantilla chat JSONL particiones fuga documento desbalance"},{"id":"llm5l2","num":2,"lnum":2,"title":"SFT en la práctica: LoRA, QLoRA y paciencia","href":"llm5l2.html","kind":"lesson","search":"SFT ajuste supervisado LoRA QLoRA rango adaptador enmascarar pérdida packing épocas sobreajuste olvido catastrófico checkpoint evaluación"},{"id":"llm5l3","num":3,"lnum":3,"title":"Alineación con preferencias: DPO y alternativas","href":"llm5l3.html","kind":"lesson","search":"alineación preferencias RLHF DPO ORPO beta pares elegido rechazado modelo recompensa longitud sesgo evaluación utilidad"},{"id":"llm5q","num":4,"lnum":4,"title":"Cierre del módulo 05","href":"llm5q.html","kind":"quiz","search":"evaluación cierre dataset instrucciones SFT LoRA QLoRA máscara packing DPO ORPO preferencias alineación sobreajuste"}]},{"num":"06","title":"Evaluación y optimización","lessons":[{"id":"llm6l1","num":1,"lnum":1,"title":"Evaluar un LLM y un sistema RAG","href":"llm6l1.html","kind":"lesson","search":"evaluación LLM RAG golden dataset recall fidelidad relevancia contexto LLM-as-judge rúbrica sesgo offline online regresión"},{"id":"llm6l2","num":2,"lnum":2,"title":"Optimizar la inferencia sin romper la calidad","href":"llm6l2.html","kind":"lesson","search":"inferencia cuantización 8 bits 4 bits GPTQ AWQ bitsandbytes destilación poda modelo pequeño KV cache FlashAttention speculative decoding vLLM throughput"},{"id":"llm6l3","num":3,"lnum":3,"title":"Elegir modelo y hardware: coste, latencia y calidad","href":"llm6l3.html","kind":"lesson","search":"benchmark dominio latencia TTFT tokens por segundo throughput memoria KV cache concurrencia autoscaling cascada enrutamiento SLA coste"},{"id":"llm6q","num":4,"lnum":4,"title":"Cierre del módulo 06","href":"llm6q.html","kind":"quiz","search":"evaluación cierre fidelidad golden set recuperación cuantización destilación KV cache TTFT throughput SLA coste latencia"}]},{"num":"07","title":"RAG en producción","lessons":[{"id":"llm7l1","num":1,"lnum":1,"title":"El pipeline de inferencia RAG","href":"llm7l1.html","kind":"lesson","search":"inferencia RAG normalización reescritura consulta filtros permisos contexto prompt citas temperatura streaming caché semántica degradación guardrails"},{"id":"llm7l2","num":2,"lnum":2,"title":"Desplegar el pipeline: API, Docker y CI/CD","href":"llm7l2.html","kind":"lesson","search":"despliegue FastAPI Docker SageMaker ECR CI/CD canario reversión infraestructura como código IAM secretos salud migración índice"},{"id":"llm7l3","num":3,"lnum":3,"title":"LLMOps: observar, evaluar y mejorar","href":"llm7l3.html","kind":"lesson","search":"LLMOps observabilidad trazas métricas coste deriva prompt drift evaluación continua gobierno versionado prompts retención incidentes"},{"id":"llm7q","num":4,"lnum":4,"title":"Cierre del módulo 07","href":"llm7q.html","kind":"quiz","search":"evaluación cierre inferencia RAG permisos despliegue canario reversión LLMOps trazas deriva prompt drift métricas gobierno"}]}]};</script>
+<script src="js/curso.js"></script>
+</body>
+</html>
